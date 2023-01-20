@@ -1,0 +1,7 @@
+{
+  "name": "inicioEjemplo2022",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

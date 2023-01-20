@@ -1,0 +1,21 @@
+<app-page-header titulo="Cámara"></app-page-header>
+
+<ion-content>
+    <!--  Ejemplo simple de la cámara 
+    <ion-button (click)="takePicture()" expand="block" fill="clear" shape="round">
+        Click me
+    </ion-button>
+    <ion-img [src]="url"></ion-img>
+    -->
+
+    <ion-button (click)="camaraFotos.sacarFoto()" expand="block" fill="clear" shape="round">
+        Click me
+    </ion-button>
+    <ion-grid>
+        <ion-row>
+          <ion-col size="6" *ngFor="let url of camaraFotos.getListaUrl()">
+            <ion-img [src]="url"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>

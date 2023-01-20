@@ -1,0 +1,18 @@
+<app-page-header titulo="Fotos"></app-page-header>
+
+<ion-content>
+
+    <ion-button (click)="takePicture()" expand="block" fill="clear" shape="round">
+        Sacar foto
+    </ion-button>
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="6" *ngFor="let foto of usarCamara.getFotos()">
+                <ion-img [src]="foto.webviewPath"></ion-img>
+            </ion-col>
+
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
